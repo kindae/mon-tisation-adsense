@@ -13,7 +13,7 @@ return [
     // Informations légales (obligatoires pour les mentions légales et pour AdSense)
     'owner_name'    => 'Henry Fiti',
     'owner_address' => 'Avenue Bateke 6D, Kinshasa, République démocratique du Congo',
-    'contact_email' => 'contact@yabiso.cloud',
+    'contact_email' => 'henryfiti1@gmail.com',
     'host_info'     => 'Hostinger International Ltd — 61 Lordou Vironos Street, 6023 Larnaca, Chypre — www.hostinger.com',
 
     // Google AdSense : votre identifiant éditeur, ex. 'ca-pub-1234567890123456'.
