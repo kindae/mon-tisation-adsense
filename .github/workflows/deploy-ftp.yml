@@ -3,7 +3,7 @@
 #   FTP_SERVER     ex. ftp.yabiso.cloud (fourni par l'hébergeur)
 #   FTP_USERNAME   identifiant FTP
 #   FTP_PASSWORD   mot de passe FTP
-#   FTP_SERVER_DIR (facultatif) dossier du site sur le serveur, par défaut public_html/  (OVH : www/)
+#   FTP_SERVER_DIR (facultatif) dossier du site, RELATIF au dossier d'arrivée du compte FTP. Par défaut ./ (le compte FTP s'ouvre déjà dans public_html)
 name: Déploiement FTP
 
 on:
@@ -28,7 +28,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR || 'public_html/' }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR || './' }}
           exclude: |
             **/.git*
             **/.git*/**
