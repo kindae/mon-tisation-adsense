@@ -11,10 +11,10 @@ return [
     'site_url'      => 'https://yabiso.cloud',
 
     // Informations légales (obligatoires pour les mentions légales et pour AdSense)
-    'owner_name'    => 'Prénom Nom',
-    'owner_address' => '1 rue Exemple, 75000 Paris, France',
+    'owner_name'    => 'Henry Fiti',
+    'owner_address' => 'Bateke 6D',
     'contact_email' => 'contact@yabiso.cloud',
-    'host_info'     => 'Nom de l\'hébergeur — adresse de l\'hébergeur — téléphone',
+    'host_info'     => 'Hostinger International Ltd — 61 Lordou Vironos Street, 6023 Larnaca, Chypre — www.hostinger.com',
 
     // Google AdSense : votre identifiant éditeur, ex. 'ca-pub-1234567890123456'.
     // Laissez vide tant que vous n'avez pas de compte : aucune publicité ne sera affichée.
