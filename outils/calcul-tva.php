@@ -24,9 +24,14 @@ if (is_post()) {
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Calculez en un instant un prix TTC à partir d'un prix hors taxes, ou retrouvez le montant HT et la TVA
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Calculez en un instant un prix TTC à partir d'un prix hors taxes, ou retrouvez le montant HT et la TVA
 contenus dans un prix TTC. Tous les taux français sont disponibles, ainsi qu'un taux personnalisé.</p>
+  </div>
+</div>
 
 <form method="post" class="tool">
   <div class="row">

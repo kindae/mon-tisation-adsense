@@ -42,9 +42,14 @@ function pct_form(string $mode, string $title, string $labelA, string $labelB, ?
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Trois calculateurs pour répondre aux questions de pourcentage les plus courantes : combien font X % d'un nombre,
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Trois calculateurs pour répondre aux questions de pourcentage les plus courantes : combien font X % d'un nombre,
 quelle part représente une valeur, et de combien une valeur a augmenté ou diminué.</p>
+  </div>
+</div>
 
 <?php if ($error): ?><div class="alert"><?= e($error) ?></div><?php endif; ?>
 <?php pct_form('part', 'Combien font X % de Y ?', 'Pourcentage X (%)', 'Valeur Y', $result, $mode); ?>

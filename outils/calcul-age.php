@@ -33,9 +33,14 @@ if (is_post()) {
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Indiquez une date de naissance pour connaître l'âge exact en années, mois et jours, le nombre total de jours
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Indiquez une date de naissance pour connaître l'âge exact en années, mois et jours, le nombre total de jours
 vécus et le temps restant avant le prochain anniversaire.</p>
+  </div>
+</div>
 
 <form method="post" class="tool">
   <div class="row">

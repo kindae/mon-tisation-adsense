@@ -24,6 +24,7 @@ return [
     'adsense_slots' => [
         'top'        => '',
         'in_content' => '',
+        'sidebar'    => '',
         'bottom'     => '',
     ],
 ];

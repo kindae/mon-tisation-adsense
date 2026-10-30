@@ -37,9 +37,14 @@ if (is_post()) {
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Estimez la mensualité d'un crédit immobilier, auto ou à la consommation, son coût total en intérêts et
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Estimez la mensualité d'un crédit immobilier, auto ou à la consommation, son coût total en intérêts et
 l'évolution du capital restant dû, année par année.</p>
+  </div>
+</div>
 
 <form method="post" class="tool">
   <div class="row">

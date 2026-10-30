@@ -22,9 +22,14 @@ if (is_post() && $text !== '') {
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Encodez n'importe quel texte en Base64 ou décodez une chaîne Base64 pour lire son contenu. Les caractères accentués
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Encodez n'importe quel texte en Base64 ou décodez une chaîne Base64 pour lire son contenu. Les caractères accentués
 et les emojis sont pris en charge (UTF-8).</p>
+  </div>
+</div>
 
 <form method="post" class="tool">
   <label for="texte">Texte ou chaîne Base64</label>
