@@ -18,7 +18,7 @@ return [
 
     // Google AdSense : votre identifiant éditeur, ex. 'ca-pub-1234567890123456'.
     // Laissez vide tant que vous n'avez pas de compte : aucune publicité ne sera affichée.
-    'adsense_client' => '',
+    'adsense_client' => 'ca-pub-5597349965916962',
 
     // (Facultatif) identifiants de blocs d'annonces manuels. Laissez vide pour n'utiliser que les « annonces automatiques ».
     'adsense_slots' => [

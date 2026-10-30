@@ -1,2 +1,1 @@
-# Remplacez pub-0000000000000000 par votre identifiant éditeur AdSense (visible dans AdSense > Compte)
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-5597349965916962, DIRECT, f08c47fec0942fa0
