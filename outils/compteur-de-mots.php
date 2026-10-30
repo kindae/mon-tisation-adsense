@@ -34,9 +34,14 @@ if (is_post() && $text !== '') {
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Collez votre texte ci-dessous pour connaître instantanément son nombre de mots, de caractères (avec et sans espaces),
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Collez votre texte ci-dessous pour connaître instantanément son nombre de mots, de caractères (avec et sans espaces),
 de phrases et de paragraphes, ainsi que son temps de lecture estimé.</p>
+  </div>
+</div>
 
 <form method="post" class="tool">
   <label for="texte">Votre texte</label>

@@ -39,9 +39,14 @@ if (is_post()) {
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Générez des mots de passe aléatoires et robustes en un clic. Le générateur utilise une source d'aléa
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Générez des mots de passe aléatoires et robustes en un clic. Le générateur utilise une source d'aléa
 cryptographique et les mots de passe ne sont jamais enregistrés.</p>
+  </div>
+</div>
 
 <form method="post" class="tool">
   <label for="longueur">Longueur : <?= $length ?> caractères (6 à 64)</label>

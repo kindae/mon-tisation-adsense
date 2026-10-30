@@ -8,9 +8,14 @@ $villes = [
 ];
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">L'heure exacte de votre appareil, affichée en grand et mise à jour chaque seconde. Idéal en plein écran pour
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">L'heure exacte de votre appareil, affichée en grand et mise à jour chaque seconde. Idéal en plein écran pour
 une salle de classe, une réunion ou un examen.</p>
+  </div>
+</div>
 
 <div class="tool">
   <div id="clock" class="clock">--:--:--</div>

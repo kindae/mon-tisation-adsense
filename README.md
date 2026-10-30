@@ -1,13 +1,25 @@
 # Yabiso Cloud — site d'outils en ligne en PHP, prêt pour Google AdSense
 
-Site de 11 outils gratuits (compteur de mots, calcul de TVA, simulateur de prêt, IMC, âge, pourcentages,
-convertisseur d'unités, générateur de mot de passe, Base64, majuscules/minuscules, horloge mondiale),
-avec toutes les pages exigées par AdSense : **À propos, Contact, Politique de confidentialité, Mentions légales, CGU**.
+Site de **20 outils gratuits** répartis en 8 catégories, avec recherche instantanée sur la page d'accueil :
+
+| Catégorie | Outils |
+|---|---|
+| Calcul | Pourcentage, remise et soldes, moyenne avec coefficients |
+| Finance | TVA (HT ↔ TTC), simulateur de prêt, salaire brut ↔ net |
+| Texte | Compteur de mots, majuscules/minuscules, Lorem Ipsum |
+| Conversion | Unités, nombre en lettres (chèques) |
+| Date & temps | Âge, jours entre deux dates (jours ouvrés, fériés), chronomètre/minuteur, horloge mondiale |
+| Web & développeur | QR code (lien, Wi-Fi, e-mail…), couleurs HEX/RVB/HSL, Base64 |
+| Sécurité | Générateur de mot de passe |
+| Santé | IMC |
+
+Avec toutes les pages exigées par AdSense : **À propos, Contact, Politique de confidentialité, Mentions légales, CGU**.
 
 - PHP 8.0+ seulement, **aucune base de données**, aucune dépendance.
 - Chaque outil a un vrai texte explicatif (formules, exemples, FAQ) : c'est ce qui évite le refus
   « contenu à faible valeur » d'AdSense.
-- Responsive, mode sombre automatique, sitemap automatique.
+- Design moderne et responsive, mode sombre automatique, barre latérale (emplacement publicitaire), sitemap et données structurées automatiques.
+- Aucune ressource externe (police, script) hormis AdSense : pages rapides et conformes RGPD.
 
 ## Installation (≈ 15 minutes)
 
@@ -43,7 +55,7 @@ Le fichier `.github/workflows/deploy-ftp.yml` envoie le site sur l'hébergement 
 5. Dans AdSense → **Confidentialité et messages**, activez le **message de consentement RGPD** de Google
    (obligatoire pour les visiteurs européens, rien à coder).
 6. Cliquez sur « Demander un examen ». Une fois accepté, activez les **annonces automatiques** :
-   rien d'autre à faire. (Facultatif : créez des blocs manuels et collez leurs identifiants dans `adsense_slots`.)
+   rien d'autre à faire. (Facultatif : créez des blocs manuels et collez leurs identifiants dans `adsense_slots` : haut, milieu, bas de page et barre latérale.)
 
 ## Soyons honnêtes sur le délai
 
@@ -62,6 +74,7 @@ pour maximiser vos chances :
 ## Ajouter un outil
 
 1. Ajoutez une entrée dans `tools()` dans `inc/functions.php` (slug, icône, catégorie, titre, description).
+   Les catégories et leurs couleurs se trouvent juste au-dessus, dans `categories()`.
 2. Copiez un outil existant vers `outils/<slug>.php` et adaptez le formulaire, le calcul et le texte.
 
 Il apparaît automatiquement sur l'accueil, dans les « Autres outils » et dans le sitemap.

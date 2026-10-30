@@ -46,9 +46,14 @@ if (is_post() && $text !== '') {
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Transformez un texte en majuscules, en minuscules, en casse de titre ou de phrase, ou retirez tous ses accents,
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Transformez un texte en majuscules, en minuscules, en casse de titre ou de phrase, ou retirez tous ses accents,
 sans avoir à le retaper.</p>
+  </div>
+</div>
 
 <form method="post" class="tool">
   <label for="texte">Texte à convertir</label>

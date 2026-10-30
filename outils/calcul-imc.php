@@ -34,9 +34,14 @@ if (is_post()) {
 }
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Calculez votre indice de masse corporelle (IMC) à partir de votre poids et de votre taille, et découvrez
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Calculez votre indice de masse corporelle (IMC) à partir de votre poids et de votre taille, et découvrez
 dans quelle catégorie il se situe selon l'Organisation mondiale de la santé.</p>
+  </div>
+</div>
 
 <form method="post" class="tool">
   <div class="row">

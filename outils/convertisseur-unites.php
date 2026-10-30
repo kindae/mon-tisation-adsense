@@ -60,9 +60,14 @@ if (is_post()) {
 $page = ['path' => 'outils/convertisseur-unites.php'];
 include __DIR__ . '/../inc/header.php';
 ?>
-<h1><?= e($tool['title']) ?></h1>
-<p class="lead">Convertissez rapidement des longueurs, des masses, des volumes et des températures entre le système métrique
+<div class="tool-head">
+  <span class="tool-icon"><?= $tool['icon'] ?></span>
+  <div>
+    <h1><?= e($tool['title']) ?></h1>
+    <p class="lead">Convertissez rapidement des longueurs, des masses, des volumes et des températures entre le système métrique
 et les unités anglo-saxonnes.</p>
+  </div>
+</div>
 
 <nav class="tabs">
   <?php foreach ($categories as $k => [$label]): ?>
