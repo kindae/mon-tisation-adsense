@@ -4,16 +4,16 @@
  */
 return [
     // Nom affiché partout sur le site
-    'site_name'     => 'OutilsMalins',
+    'site_name'     => 'Yabiso Cloud',
     'tagline'       => 'Outils en ligne gratuits, simples et rapides',
 
     // Adresse complète du site, SANS slash final (ex. https://www.mon-site.fr ou https://mon-site.fr/outils)
-    'site_url'      => 'https://www.exemple.fr',
+    'site_url'      => 'https://yabisocloud.com',
 
     // Informations légales (obligatoires pour les mentions légales et pour AdSense)
     'owner_name'    => 'Prénom Nom',
     'owner_address' => '1 rue Exemple, 75000 Paris, France',
-    'contact_email' => 'contact@exemple.fr',
+    'contact_email' => 'contact@yabisocloud.com',
     'host_info'     => 'Nom de l\'hébergeur — adresse de l\'hébergeur — téléphone',
 
     // Google AdSense : votre identifiant éditeur, ex. 'ca-pub-1234567890123456'.
