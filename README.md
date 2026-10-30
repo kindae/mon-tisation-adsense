@@ -28,7 +28,7 @@ Le fichier `.github/workflows/deploy-ftp.yml` envoie le site sur l'hébergement 
 
 1. Dans l'espace client de l'hébergeur, notez : **serveur FTP**, **identifiant**, **mot de passe**.
 2. Sur GitHub : **Settings → Secrets and variables → Actions → New repository secret**, créez :
-   `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD` (et `FTP_SERVER_DIR` si le dossier n'est pas `public_html/`, ex. `www/` chez OVH).
+   `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD` (et `FTP_SERVER_DIR` seulement si votre compte FTP ne s'ouvre pas directement dans le dossier du site : par ex. `public_html/` ou `www/`).
 3. Fusionnez la branche dans `main` : l'envoi démarre tout seul (onglet **Actions**).
    Vous pouvez aussi le relancer à la main : **Actions → Déploiement FTP → Run workflow**.
 
