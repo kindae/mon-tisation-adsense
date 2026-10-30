@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /inc/
+
+# Remplacez par l'adresse de votre site :
+Sitemap: https://www.exemple.fr/sitemap.xml
