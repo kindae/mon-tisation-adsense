@@ -3,4 +3,4 @@ Allow: /
 Disallow: /inc/
 
 # Remplacez par l'adresse de votre site :
-Sitemap: https://yabisocloud.com/sitemap.xml
+Sitemap: https://yabiso.cloud/sitemap.xml

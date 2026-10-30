@@ -1,6 +1,6 @@
 # Envoie automatiquement le site sur l'hébergement par FTP à chaque modification de la branche main.
 # Secrets à créer dans GitHub : Settings > Secrets and variables > Actions > New repository secret
-#   FTP_SERVER     ex. ftp.yabisocloud.com (fourni par l'hébergeur)
+#   FTP_SERVER     ex. ftp.yabiso.cloud (fourni par l'hébergeur)
 #   FTP_USERNAME   identifiant FTP
 #   FTP_PASSWORD   mot de passe FTP
 #   FTP_SERVER_DIR (facultatif) dossier du site sur le serveur, par défaut public_html/  (OVH : www/)

@@ -8,12 +8,12 @@ return [
     'tagline'       => 'Outils en ligne gratuits, simples et rapides',
 
     // Adresse complète du site, SANS slash final (ex. https://www.mon-site.fr ou https://mon-site.fr/outils)
-    'site_url'      => 'https://yabisocloud.com',
+    'site_url'      => 'https://yabiso.cloud',
 
     // Informations légales (obligatoires pour les mentions légales et pour AdSense)
     'owner_name'    => 'Prénom Nom',
     'owner_address' => '1 rue Exemple, 75000 Paris, France',
-    'contact_email' => 'contact@yabisocloud.com',
+    'contact_email' => 'contact@yabiso.cloud',
     'host_info'     => 'Nom de l\'hébergeur — adresse de l\'hébergeur — téléphone',
 
     // Google AdSense : votre identifiant éditeur, ex. 'ca-pub-1234567890123456'.
